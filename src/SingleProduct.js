@@ -7,6 +7,7 @@ import ProductPrice from "./components/Helper/ProductPrice";
 import Services from "./components/Services";
 import SingleProductImage from "./components/SingleProductImage";
 import AddToCart from "./components/AddToCart";
+import Footer from "./components/Footer";
 // import styled from "styled-components";
 
 const API="https://api.pujakaitem.com/api/products";
@@ -27,6 +28,7 @@ useEffect(()=>{
 
 return (
   <Wrapper>
+    <br />
   <div><h2>
   <NavLink to="/">Home/</NavLink>{name}
   </h2>
@@ -45,19 +47,21 @@ return (
     MRP:
       <del><ProductPrice price={price+250000}/></del>
      <p><b>Deal of the day: <ProductPrice price={price}/></b></p>
-      {description}
+      <div className="desc">{description}</div>
       {/* <Services /> */}
       <p>Availability: {stock>0 ? "In Stock" : "out of Stock"} ({stock} left)</p>
      <p> Brand: {company}</p>
      {/* <AddToCart product={singleProduct}/> */}
      {/* {console.log("",singleProduct)} */}
      {/* <AddToCart product={singleProduct} /> */}
-     <h6><Services /></h6>
+     <div className="serv">
+     <h6><Services /></h6></div>
      {stock > 0 && <AddToCart product={singleProduct} />}
      </h2>
   </div>
   </div>
   </div>
+  {/* <Footer /> */}
   </Wrapper>
 );
 }
@@ -75,6 +79,14 @@ h1{
 *{
   background-color: #F0F8FF;
 }
+.desc{
+  word-spacing: 0.5em;
+  line-height: 1.5em;
+}
+.serv{
+  font-size: 1em;
+}
+
 `;
 //   .container {
 //     padding: 9rem 0;

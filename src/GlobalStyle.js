@@ -33,6 +33,9 @@ export const GlobalStyle = createGlobalStyle`
   .grid-three-column {
       grid-template-columns: repeat(3, 1fr);
     }
+    grid-four-column {
+      grid-template-columns: repeat(4, 1fr);
+    }
     .grid-two-column {
       grid-template-columns: repeat(2, 1fr);
     }

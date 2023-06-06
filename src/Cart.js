@@ -46,9 +46,9 @@ import ProductPrice from "./components/Helper/ProductPrice";
           </button>
           <div className="grid amount">
             <div className="abc">
-              <h2>Amount</h2>
-              <table>
-                <thead>
+              {/* <h2>Amount</h2> */}
+              {/* <table> */}
+                {/* <thead>
                 <th className="rowGap"></th>
                 <th className="rowGap"></th>
                 </thead>
@@ -66,7 +66,7 @@ import ProductPrice from "./components/Helper/ProductPrice";
                   <td>Total Price</td>
                   <td><ProductPrice price={total_amount+shipping_fee} /></td>
                 </tr>
-              </table>
+              </table> */}
               <br />
       
             </div>

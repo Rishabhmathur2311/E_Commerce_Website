@@ -4,6 +4,7 @@ import { useFilterContext } from "./components/context/FilterContex";
 import Product from "./components/Product";
 import Sort from "./components/Sort";
 import FilterSection from "./components/FilterSection";
+import Footer from "./components/Footer";
 
 const Products = () => {
   const {filter_products,filter_loading}=useFilterContext();
@@ -34,6 +35,7 @@ const Products = () => {
     </div>
     </div>
     {/* </div> */}
+    <Footer />
      </Wrapper>
   );
     

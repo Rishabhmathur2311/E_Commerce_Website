@@ -26,7 +26,10 @@ const App = () => {
         <Route path="/singleproduct/:id" element={<SingleProduct />} />
         <Route path="*" element={<ErrorPage />} />
         </Routes>
+        <hr />
+        
       </Router>
+      
   );
 };
 

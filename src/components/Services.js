@@ -28,9 +28,9 @@ const Services=()=>{
 const Wrapper=styled.section`
 .inlin{
     text-align: center;
-    margin: 4% 9% 1% 10%;
+    margin: 15% 9% 10% 10%;
     float: center;
-    font-size: 2em;
+    font-size: 3em;
 }
 `;
 

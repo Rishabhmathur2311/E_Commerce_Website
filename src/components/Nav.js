@@ -13,9 +13,9 @@ const Nav=()=>{
                 <li >
                     <NavLink to="/">Home</NavLink>
                 </li>
-                <li >
+                {/* <li >
                     <NavLink to="/about">About</NavLink>
-                </li>
+                </li> */}
                 <li >
                     <NavLink to="/products">products</NavLink>
                 </li>
@@ -39,7 +39,11 @@ li{
     // grid-template-columns: repeat(2, 1fr);
     display: inline-block;
     width:10%;
+    margin: 2%;
     font-size: 200%;
+  }
+  ul{
+    margin: 0 2% 0 2%;
   }
 `;
 

@@ -14,7 +14,7 @@ const ServicesArray=[
     },
     {
         icon: <GrInternetExplorer />,
-        description: "Online transaction processing",
+        description: "Online transaction",
     },
     
 ];
